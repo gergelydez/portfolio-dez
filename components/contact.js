@@ -65,7 +65,7 @@ function Contact() {
   return (
     <Fragment>
       <div className="container mx-auto  glassmorphism ">
-        <div className="lg:flex mx-32 glassmorphism ">
+        <div className="lg:flex  sm:mx-32 mx-2  glassmorphism ">
           <div className="xl:w-2/5 lg:w-2/5 bg-gradient-to-l from-indigo-700 to-cyan-500 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
             <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
               <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
@@ -105,7 +105,7 @@ function Contact() {
             <form
               onSubmit={sendMessageHandler}
               id="contact"
-              className="bg-white py-4 px-20 rounded-tr rounded-br "
+              className="bg-white py-4 sm:px-20 px-4 rounded-tr rounded-br "
             >
               <h1 className="text-4xl text-gray-800 font-extrabold mb-6">
                 Enter Details
