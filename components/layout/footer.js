@@ -32,6 +32,7 @@ function Footer() {
       <div className=" text-white text-3xl mt-4  ">
         {socialItems.map((socialItem) => (
           <a
+            aria-label={socialItem.name}
             key={socialItem.name}
             className=" px-3 hover:scale-110 hover:bg-white hover:text-black hover:rounded-md"
             href={socialItem.href}
