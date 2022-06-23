@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,169 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.glassmorphism_dark {
+  background: rgba(0, 0, 0, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(50, 51, 60, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.glassmorphism_dark-gradient {
+  background: linear-gradient(
+    to left,
+    rgb(38, 36, 36) 0%,
+    rgb(99, 99, 99) 100%
+  );
+  box-shadow: 0 8px 32px 0 rgba(50, 51, 60, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.line-1 {
+  position: relative;
+
+  margin: 0 auto;
+
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.typewriter h3 {
+  color: rgb(5, 5, 5);
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 1rem;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.text_anim-right {
+  animation: anim_to-right 3s linear 0s 1 normal forwards;
+}
+
+@keyframes anim_to-right {
+  0% {
+    transform: translateX(-50rem);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.text_anim-top {
+  animation: anim_to-top 2s linear 0s 1 normal forwards;
+}
+
+@keyframes anim_to-top {
+  0% {
+    transform: translateY(-20rem);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(2rem);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.progress {
+  animation: animate 4s ease-in-out forwards;
+}
+@keyframes animate {
+  from {
+    width: 0;
+  }
 }
