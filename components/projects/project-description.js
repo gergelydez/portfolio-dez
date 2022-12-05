@@ -4,7 +4,7 @@ export default function ProjectDescription(props) {
   const { title, slug, image, description, codeLink, siteLink } = props.project;
   const imagePath = `/images/projects/${slug}/${image}`;
   return (
-    <div className="xl:mx-auto xl:container glassmorphism pt-24">
+    <div className="xl:mx-auto xl:container glassmorphism py-6">
       <div className="lg:px-20 md:px-6 px-4 md:py-12 py-8  ">
         <div className="flex flex-col-reverse lg:flex-row items-center my-12">
           <div className="w-full lg:w-2/4 p-2 my-2    itms-center text-center glassmorphism_dark-gradient">

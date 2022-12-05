@@ -5,6 +5,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { AnimateOnScroll } from "../helpers/animate-on-scroll";
 import Link from "next/link";
 
+
 export const navigation = [
   { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
@@ -17,7 +18,8 @@ function Navbar() {
     <Popover>
       <div
         className={`${
-          animate && "fixed   bg-transparent backdrop-blur-xl transition ease-in-out  p-3"
+          animate &&
+          "fixed   bg-transparent backdrop-blur-xl transition ease-in-out  p-3"
         }  top-0 left-0 right-0 z-40 p-5 lg:px-8 rounded-b-md shadow-md shadow-slate-300 bg-white mb-4`}
       >
         <nav

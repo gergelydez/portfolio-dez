@@ -27,7 +27,7 @@ export default function Hero() {
               <h1 className="anim-typewriter line-1 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl text-xl">
                 <span className="block  xl:inline ">Hi, I am Dezső</span> <br />
                 <span className="block text-indigo-600 xl:inline">
-                  Front-End Developer
+                  Web Developer
                 </span>
               </h1>
               <p className="text_anim-top mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">

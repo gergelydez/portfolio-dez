@@ -35,7 +35,7 @@ export default function Summary() {
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
-    threshold: 1.0,
+    threshold: 1,
   });
   return (
     <section className=" max-w-7xl mx-auto p-8 my-6  glassmorphism">
